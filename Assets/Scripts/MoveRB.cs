@@ -13,12 +13,13 @@ public class MoveRB : MonoBehaviour
     void Start()
     {
         myRb = GetComponent<Rigidbody>();
-    }
-
+    } 
+    
     private void FixedUpdate()
     {
-        myRb.MovePosition(myRb.position + movePosition * speed * Time.fixedTime);
+        myRb.MovePosition(myRb.position + movePosition * speed * Time.fixedDeltaTime);
     }
+    
 
     // Update is called once per frame
     void Update()
