@@ -6,7 +6,7 @@ public class Air_Resistance : MonoBehaviour
 {
     public Rigidbody rb;
     public float enginePowerThrust, liftBooster, drag, angularDrag;
-
+    
     void Update()
     {
         if (Input.GetKey(KeyCode.Space))
@@ -22,6 +22,7 @@ public class Air_Resistance : MonoBehaviour
 
         rb.AddTorque(Input.GetAxis("Horizontal") * transform.forward * -1);
         rb.AddTorque(Input.GetAxis("Vertical") * transform.right);
-    }
 
+    }
+   
 }
