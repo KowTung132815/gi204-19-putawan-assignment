@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AirResistance : MonoBehaviour
+public class Air_Resistance : MonoBehaviour
 {
     public Rigidbody rb;
     public float enginePowerThrust, liftBooster, drag, angularDrag;
